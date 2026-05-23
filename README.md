@@ -1,6 +1,9 @@
 # 🐍 Python Journey
 
-19 y/o CS student. Self-taught. Building toward ML and NLP.
+## 💻 Personal Data 
+- Started: May 2026
+- Age: 19
+- 19 y/o CS student. Self-taught. Building toward ML and NLP.
 
 ## 🎯 Goal
 Python basics → Data Scraping → ML → NLP Specialization
