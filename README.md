@@ -16,7 +16,7 @@ Python basics → Data Scraping → ML → NLP Specialization
 ## 🗓️ Progress Log
 - Week 1: Variables, loops, conditions
 - Week 2: Lists, dictionaries, data structures
-- Week 3: (update as you go)
+- Week 3: (update as i go)
 
 ## 🛠️ Tools
 - Python
