@@ -1,5 +1,6 @@
-# Task Manager 
-> A checklist for managing schedule and task
+# Project 1 — Task Manager Planning
+## What does this app do?
+> A task manager that compile a task or schedule to manage a different task to complete or monitor a complishment
 ---
 
 ## Goal 
