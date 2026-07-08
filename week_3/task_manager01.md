@@ -39,9 +39,12 @@ END
 Used is instead of == for comparing numbers, which worked by accident in testing but is technically incorrect and was fixed.
 Initially tried comparing an empty list directly to 0 (task_list is 0), which is invalid — fixed using len(task_list) == 0.
 Forgot to indent the menu logic inside the while True loop at first, so the menu only showed once instead of repeating.
+debbuged a missing comma between open("task.txt" "w")
 
 ## Things That I've Learned
 How to use .append() and .pop() to modify a list dynamically based on user input
 The difference between == (value comparison) and is (identity comparison), and why == is almost always what you want
 How to structure a menu-driven program using while True with break to exit cleanly
 Zero-indexing matters when mapping user-facing numbers (1, 2, 3...) to actual list positions (0, 1, 2...)
+How to persist data between program runs using file read/write <open(), with, os.path.exist()>
+the difference between data living only in memory task_list vesus the data saved permanently to disk task.txt
