@@ -11,14 +11,15 @@ Python basics → Data Scraping → ML → NLP Specialization
 ## 📅 Current Focus
 - Python fundamentals
 - Data structures
-- File organizer project
+- Task list Manager
 
 ## 🗓️ Progress Log
 - Week 1: Variables, loops, conditions
 - Week 2: Lists, dictionaries, data structures
-- Week 3: (update as i go)
+- Week 3: File Handling (still continuing)
 
 ## 🛠️ Tools
 - Python
 - VS Code
 - GitHub
+- Claude
