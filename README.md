@@ -22,4 +22,5 @@ Python basics → Data Scraping → ML → NLP Specialization
 - Python
 - VS Code
 - GitHub
-- Claude
+- Claude(Ai)
+- Gemini(Ai)
