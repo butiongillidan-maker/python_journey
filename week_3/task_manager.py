@@ -14,6 +14,13 @@ def save_task():
             file.write("\n")
 
 
+def show_task():
+    addition = 0
+    for task in task_list:
+        addition = addition + 1
+        print(f"{addition}: {task}")
+
+
 while True:
     print("1. View Task\n 2. Add a task\n 3. Complete / Remove task\n 4. Exit")
     choices = int(input("My choice: "))
@@ -22,10 +29,7 @@ while True:
         if not task_list:
             print("task is empty! no task is scheduled")
         else:
-            addition = 0
-            for task in task_list:
-                addition = addition + 1
-                print(f"{addition}: {task}", "\n")
+            show_task()
                 
     elif choices == 2:
         new_task = input("Add a New Task: ")
@@ -38,10 +42,7 @@ while True:
         if len(task_list) == 0:
             print("No task available to complete.")
         else:
-            addition = 0
-            for task in task_list:
-                addition += 1
-                print(f"{addition}: {task}")
+            show_task()
             completed_num = int(input("Enter the number of task you completed: "))
             removed_task = task_list.pop(completed_num - 1)
             save_task()
