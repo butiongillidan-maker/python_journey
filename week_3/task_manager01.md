@@ -50,3 +50,4 @@ Zero-indexing matters when mapping user-facing numbers (1, 2, 3...) to actual li
 How to persist data between program runs using file read/write <open(), with, os.path.exist()>
 the difference between data living only in memory task_list vesus the data saved permanently to disk task.txt
 Got confused mid-project, correctly chose to isolate the problem in a scratch file instead of guessing blindly
+How to use functions (def) to eliminate duplicated code — refactored repeated display logic into a single show_task() function and repeated file-writing logic into save_task()
