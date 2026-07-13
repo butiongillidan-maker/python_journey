@@ -3,7 +3,7 @@
 ### 💻 Personal Data
 * **Started:** May 2026
 * **Age:** 19
-* **Role:** 1st Year CS Student | Self-Taught Developer
+* **Role:** 2nd Year CS Student | Self-Taught Developer
 * **Focus:** Building a rock-solid foundation from Python basics to automated MLOps engineering.
 
 ### 🎯 Goal
