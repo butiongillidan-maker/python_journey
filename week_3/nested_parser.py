@@ -12,4 +12,9 @@ api_response = {
 }
 
 
-print(api_response["server"]["name"])
+server_name = (api_response.get("server", {}).get("name", "unknown name"))
+is_ssl = (api_response.get("server", {}).get("config", {}).get("ssl_enabled"))
+if is_ssl:
+    print(f"SUCCESS: {server_name} has SSL enabled.")
+else:
+    print(f" Warning: {server_name} does not have SSL Enabled.")
