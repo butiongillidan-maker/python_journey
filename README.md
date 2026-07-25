@@ -17,7 +17,7 @@ Python Basics ➔ Data Scraping & APIs ➔ Machine Learning Fundamentals ➔ MLO
 ### 📆 Progress Log
 * **Week 1:** Variables, loops, conditions, and basic logic
 * **Week 2:** Lists, dictionaries, tuples, and data structures
-* **Week 3:** File Handling & Automation (still continuing)
+* **Week 3:** File Handling & Automation, JSON/API Payloads & File I/O (In Progress)
 
 ## 🛠️ Tools
 - Python
