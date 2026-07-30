@@ -1,0 +1,7 @@
+[
+    {"timestamp": "2026-07-30 10:00:00", "server": "auth-node-1", "status": 200, "latency_ms": 120, "error": null},
+    {"timestamp": "2026-07-30 10:01:00", "server": "db-cluster-1", "status": 500, "latency_ms": 850, "error": "DatabaseTimeout"},
+    {"timestamp": "2026-07-30 10:02:00", "server": "api-gateway", "status": 200, "latency_ms": 95, "error": null},
+    {"timestamp": "2026-07-30 10:03:00", "server": "auth-node-1", "status": 500, "latency_ms": 1200, "error": "InvalidToken"},
+    {"timestamp": "2026-07-30 10:04:00", "server": "payment-service", "status": 200, "latency_ms": 310, "error": null}
+]
