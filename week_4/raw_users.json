@@ -1,0 +1,7 @@
+[
+    {"id": 101, "username": "alice_dev", "role": "admin", "active": true, "failed_logins": 0, "email_verified": true},
+    {"id": 102, "username": "bob_tester", "role": "user", "active": false, "failed_logins": 5, "email_verified": false},
+    {"id": 103, "username": "charlie_ml", "role": "user", "active": true, "failed_logins": 12, "email_verified": true},
+    {"id": 104, "username": "david_hacker", "role": "guest", "active": true, "failed_logins": 25, "email_verified": false},
+    {"id": 105, "username": "eve_security", "role": "admin", "active": true, "failed_logins": 1, "email_verified": true}
+]
