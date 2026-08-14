@@ -8,5 +8,22 @@ class UserAccount:
         return f"this {self.username}, and his {self.role}, - {self.is_active}"
 
     def deactivate(self):
-        set.is_active = False
+        self.is_active = False
         print(f"Your account {self.username} has been deactivated.")
+
+        user_1 = UserAccount("Dan_engineer", "Head")
+        print(user_1.get_details())
+        user_1.deactivate()
+        print(user_1.get_details())
+    
+
+        
+
+        
+
+ 
+    
+    
+
+    
+    
