@@ -5,16 +5,16 @@ class UserAccount:
         self.is_active = True
 
     def get_details(self):
-        return f"this {self.username}, and his {self.role}, - {self.is_active}"
+        return f"this {self.username}, and im {self.role} - {self.is_active}"
 
     def deactivate(self):
         self.is_active = False
         print(f"Your account {self.username} has been deactivated.")
 
-        user_1 = UserAccount("Dan_engineer", "Head")
-        print(user_1.get_details())
-        user_1.deactivate()
-        print(user_1.get_details())
+user_1 = UserAccount("Dan", "Engineer")
+print(user_1.get_details())
+user_1.deactivate()
+print(user_1.get_details())
     
 
         
