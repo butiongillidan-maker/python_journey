@@ -7,7 +7,7 @@
 * **Focus:** Building a rock-solid foundation from Python basics to automated MLOps engineering.
 
 ### 🎯 Goal
-Python Basics ➔ Data Scraping & APIs ➔ Machine Learning Fundamentals ➔ MLOps (DevOps for ML)
+Python Basics → Data Scraping & APIs → FastAPI → Machine Learning Fundamentals → MLOps
 
 ### 🎯 Current Focus
 * Python fundamentals & advanced scripting
@@ -22,7 +22,7 @@ Python Basics ➔ Data Scraping & APIs ➔ Machine Learning Fundamentals ➔ MLO
 * **[✓] Week 1:** Variables, Loops, Conditions, and Core Logic
 * **[✓] Week 2:** Sequences, List Comprehensions, and Log Auditing Capstone
 * **[✓] Week 3:** Dictionaries, Data Iteration, JSON/API Payloads & File I/O
-* **[🔄] Week 4:** Object-Oriented Programming (OOP) Fundamentals... (In Progress)
+* **[✓] Week 4:** Object-Oriented Programming (OOP)
 - VS Code
 - GitHub
 - Claude(Ai)
