@@ -22,7 +22,7 @@ Python Basics → Data Scraping & APIs → FastAPI → Machine Learning Fundamen
 * **[✓] Week 1:** Variables, Loops, Conditions, and Core Logic
 * **[✓] Week 2:** Sequences, List Comprehensions, and Log Auditing Capstone
 * **[✓] Week 3:** Dictionaries, Data Iteration, JSON/API Payloads & File I/O
-* **[✓] Week 4:** Object-Oriented Programming (OOP)
+* **[✓] Week 4:** Object-Oriented Programming (OOP), Client-Side HTTP Requests
 - VS Code
 - GitHub
 - Claude(Ai)
