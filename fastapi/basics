@@ -22,8 +22,9 @@ from fastapi import FastAPI
 app = FastAPI()
 
 @app.get("/products/{product_id}")
-def get_product(product_id: int):
-    return {"message": f"the product id your looking for is {product_id}"}
+def get_product(product_id: str, product_name: str):
+    return {"message": f"the product your looking for is {product_name} (ID: {product_id})"}
+
 
 
 
