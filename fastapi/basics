@@ -17,14 +17,16 @@ def get_user(user_id: int):
     return {"message": f"User id is {user_id}"}
 # work 3
 
+from itertools import product
+
 from fastapi import FastAPI
 
 app = FastAPI()
 
 @app.get("/products/{product_id}")
-def get_product(product_id: str, product_name: str):
-    return {"message": f"the product your looking for is {product_name} (ID: {product_id})"}
-
+def get_product(product_id: int):
+    product_name = f"item # {product_id}"
+    return {"message": f"id :{product_id}", "name": {product_name}: "item {product_id}"}
 
 
 
