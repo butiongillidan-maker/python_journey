@@ -12,20 +12,13 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/users/{user_id}")
-def get_user(user_id: int):
-    return {"message": f"User id is {user_id}"}
-# work 3
-
-from fastapi import FastAPI
-
-app = FastAPI()
-
-@app.get("/products/{product_id}")
-def get_product(product_id: int):
+@app.get("/products/{product_id}/reviews/{review_id}")
+def get_product(product_id: int, review_id: int):
     product_name = f"item # {product_id}"
-    return {"product_id": product_id, "product_name": product_name}
+    review_name = f"review # {review_id}"
+    return {"product_id": product_id, "product_name": product_name, "review_id": review_id, "review_name": review_name}
 
+ 
  
 
 
