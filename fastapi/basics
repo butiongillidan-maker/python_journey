@@ -18,6 +18,9 @@ def get_product(product_id: int, review_id: int):
     review_name = f"review # {review_id}"
     return {"product_id": product_id, "product_name": product_name, "review_id": review_id, "review_name": review_name}
 
+
+# work 3
+
  
  
 
