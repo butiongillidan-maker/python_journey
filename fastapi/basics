@@ -21,8 +21,9 @@ def get_product(product_id: int, review_id: int):
 
 # work 3
 
- 
- 
+@app.get("/products")
+def list_products(limit: int, skip: int):
+    return {"limit": limit, "skip": skip}
 
 
 
