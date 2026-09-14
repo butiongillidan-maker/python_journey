@@ -26,7 +26,18 @@ def list_products(limit: int, skip: int):
     return {"limit": limit, "skip": skip}
 
 # work 4
+from fastapi import FastAPI
 
+app = FastAPI()
+
+@app.get("/users/{user_id}")
+def get_user(user_id: int):
+    # FastAPI automatically validates that user_id MUST be an integer!
+    return {"user_id": user_id, "status": "Active"}
+
+@app.get("/search")
+def search(q: str = "all"):
+    return {"query_searched": q}
 
 
 
