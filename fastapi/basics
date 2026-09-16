@@ -39,6 +39,24 @@ def get_user(user_id: int):
 def search(q: str = "all"):
     return {"query_searched": q}
 
+# work 5 (Query Parameters)
+
+from fastapi import FastAPI
+
+app = FastAPI
+@app.get ("/item" "{item_id}")
+def get_item(item_id: int):
+    return {
+        "item_id":item_id,
+        "item_name": "Sample Laptop",
+        "price": 999.99
+    }
+@app.get("/products")
+def get_products(category: str = "all", limit: int = 10:
+                 return {
+                     "category" : category
+                 }
+
 
 
 
