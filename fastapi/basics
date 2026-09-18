@@ -58,6 +58,22 @@ def get_products(category: str = "all", limit: int = 10:
                  }
 
 
+# work 6 
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/user/{user_id}")
+
+def pc_user(user_id: int):
+    return {
+        "user_id" : user_id,
+        "username" : "Butiong",
+        "email": "butiong@gmail.com"
+    } 
+
+
 
 
 
