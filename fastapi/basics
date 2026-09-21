@@ -64,14 +64,9 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/user/{user_id}")
-
-def pc_user(user_id: int):
-    return {
-        "user_id" : user_id,
-        "username" : "Butiong",
-        "email": "butiong@gmail.com"
-    } 
+@app.get("/items/")
+def read_items(skip: int = 0, limit: int = 10, q: str | None = None):
+    return {"skip": skip, "limit": limit, "q": q}
 
 
 
