@@ -57,6 +57,25 @@ def get_products(category: str = "all", limit: int = 10:
                      "category" : category
                  }
 
+# work 6 items input output
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+items = []
+
+@app.get("/")
+
+
+def root():
+    return{"hello": "world daw"}
+
+@app.post("/items")
+def create_item(item: str):
+    items.append(item)
+    return items
+
 
 # work 6 
 
