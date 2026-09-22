@@ -77,15 +77,8 @@ def create_item(item: str):
     return items
 
 
-# work 6 
 
-from fastapi import FastAPI
 
-app = FastAPI()
-
-@app.get("/items/")
-def read_items(skip: int = 0, limit: int = 10, q: str | None = None):
-    return {"skip": skip, "limit": limit, "q": q}
 
 
 
