@@ -80,8 +80,11 @@ def create_item(item: str):
 work 7 (working progress)
 
 
+from fastapi import FastAPI
 
+app = FastAPI
 
+.......
 
 
 
