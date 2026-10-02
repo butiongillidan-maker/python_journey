@@ -77,17 +77,17 @@ def create_item(item: str):
     return items
 
 
-work 7 (working progress)
+work 7
 
 
 from fastapi import FastAPI
 
 app = FastAPI
 
-...........
-
-(to be continue)
-
+@app.get("/products")
+def list_products(category: str):
+    return {"category": category}
+    
 
 
 
