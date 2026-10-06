@@ -90,8 +90,17 @@ def list_products(category: str = "all"):
 
 work 8 (to be continued)
 
+from fastapi import FastAPI
 
+app = FastAPI()
 
+@app.get("/search" "{search_keyword}")
+def get_keyword(search_keyword: str = "shoes", limit: int = 10):
+
+    return{
+        "search_keyword": "shoes" "limit": 10
+    }
+    
 
 
 
