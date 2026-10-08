@@ -103,46 +103,5 @@ def get_keyword(search_keyword: str = "shoes", limit: int = 10):
     
 work 8 
 
-from typing import Annotated
-from fastapi import FastAPI, Query, Path
-from pydantic import BaseModel
-
-app = FastAPI(
-    title="Search API",
-    description="API for querying item keywords with pagination limits.",
-    version="1.0.0"
-)
-
-# Optional: Response model using Pydantic for validation and automatic documentation
-class SearchResponse(BaseModel):
-    search_keyword: str
-    limit: int
-
-@app.get(
-    "/search/{search_keyword}",
-    response_model=SearchResponse,
-    summary="Search items by keyword",
-    tags=["Search"]
-)
-def get_keyword(
-    search_keyword: Annotated[
-        str, 
-        Path(description="The keyword to search for", min_length=1)
-    ],
-    limit: Annotated[
-        int, 
-        Query(description="Maximum number of items to return", ge=1, le=100)
-    ] = 10
-):
-    """
-    Search for items using a required path parameter and an optional limit query parameter.
-    
-    - **search_keyword**: Target search string (Path parameter)
-    - **limit**: Maximum results to retrieve (Query parameter, default 10, range 1–100)
-    """
-    return {
-        "search_keyword": search_keyword,
-        "limit": limit
-    }
 
 
