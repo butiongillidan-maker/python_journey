@@ -82,26 +82,17 @@ work 7
 
 from fastapi import FastAPI
 
-app = FastAPI
-
-@app.get("/products")
-def list_products(category: str = "all"):
-    return {"category": category}
-
-work 8 (to be continued)
-
-from fastapi import FastAPI
-
 app = FastAPI()
 
-@app.get("/search" "{search_keyword}")
-def get_keyword(search_keyword: str = "shoes", limit: int = 10):
+@app.get("/search")
+def get_keyword(keyword: str, limit: int = 10):
 
     return{
-        "search_keyword": "shoes" "limit": 10
+        "keyword": keyword , "limit": limit}
+    
     }
     
-work 8 
+
 
 
 
