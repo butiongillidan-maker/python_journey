@@ -30,4 +30,4 @@ async def create_item(item: Item):
         item_dict["price_with_tax"] = item.price + item.tax
     return item_dict
 
-#(to be continued come back at 8:30pm)
+#(to be continued come back at 1:30)
