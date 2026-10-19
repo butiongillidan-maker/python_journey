@@ -30,4 +30,25 @@ async def create_item(item: Item):
         item_dict["price_with_tax"] = item.price + item.tax
     return item_dict
 
-#(to be continued come back at 1:30)
+from fastapi import FastAPI, Query
+from pydantic import BaseModel
+
+app = FastAPI()
+
+class Item(BaseModel):
+    name: str
+    description: str | None = None
+    price: float
+    tax: float | None = None
+
+@app.put("/items/{item_id}")
+async def update_item(
+    item_id: int,                  # Path parameter
+    item: Item,                    # Request Body (Pydantic model)
+    q: str | None = None,          # Query parameter
+    published: bool = True         # Query parameter with default value
+):
+    results = {"item_id": item_id, **item.dict(), "published": published}
+    if q:
+        results["q"] = q
+    return results
